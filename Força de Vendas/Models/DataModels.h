@@ -49,6 +49,7 @@ RLM_ARRAY_TYPE(Telefone)
 @property NSString *logradouro;
 @property NSString *numero;
 @property NSString *referencia;
+@property NSString *bairro;
 @property NSString *cidade;
 @property NSString *estado;
 @property NSString *pais;

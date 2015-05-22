@@ -1,19 +1,18 @@
 PODS:
-  - Expecta (1.0.0)
-  - OCMock (3.1.2)
-  - OHHTTPStubs (4.0.2)
-  - Specta (1.0.0)
+  - Realm (0.92.3):
+    - Realm/Headers (= 0.92.3)
+  - Realm/Headers (0.92.3)
+  - TPKeyboardAvoiding (1.2.6)
+  - UIAlertView+Blocks (0.9)
 
 DEPENDENCIES:
-  - Expecta
-  - OCMock
-  - OHHTTPStubs
-  - Specta
+  - Realm
+  - TPKeyboardAvoiding
+  - UIAlertView+Blocks
 
 SPEC CHECKSUMS:
-  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
-  OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
-  OHHTTPStubs: dbd1957d414659783e07b49c961940b7564c23d9
-  Specta: 96fe05fe5c7348b5223f85e862904f6e832abb14
+  Realm: bf604805d5e897850da488260f93889f510924b3
+  TPKeyboardAvoiding: ee4dd35e3bb7bb64bfbda47e7cc9ba872ff10f77
+  UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
 
 COCOAPODS: 0.37.1

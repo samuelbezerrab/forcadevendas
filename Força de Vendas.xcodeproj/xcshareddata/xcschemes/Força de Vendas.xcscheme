@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45E8DC3E4C08AF97C2692A15"
-               BuildableName = "Força de Vendas.app"
-               BlueprintName = "Força de Vendas"
-               ReferencedContainer = "container:Força de Vendas.xcodeproj">
+               BuildableName = "Forc&#x327;a de Vendas.app"
+               BlueprintName = "For&#xe7;a de Vendas"
+               ReferencedContainer = "container:Forc&#x327;a de Vendas.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41212FF5A1698F9F65B4B8DE"
-               BuildableName = "UnitTests.octest"
+               BuildableName = "UnitTests.xctest"
                BlueprintName = "UnitTests"
-               ReferencedContainer = "container:Força de Vendas.xcodeproj">
+               ReferencedContainer = "container:Forc&#x327;a de Vendas.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45E8DC3E4C08AF97C2692A15"
-            BuildableName = "Força de Vendas.app"
-            BlueprintName = "Força de Vendas"
-            ReferencedContainer = "container:Força de Vendas.xcodeproj">
+            BuildableName = "Forc&#x327;a de Vendas.app"
+            BlueprintName = "For&#xe7;a de Vendas"
+            ReferencedContainer = "container:Forc&#x327;a de Vendas.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -58,17 +58,18 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <AdditionalOptions>
-      </AdditionalOptions>
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45E8DC3E4C08AF97C2692A15"
-            BuildableName = "Força de Vendas.app"
-            BlueprintName = "Força de Vendas"
-            ReferencedContainer = "container:Força de Vendas.xcodeproj">
+            BuildableName = "Forc&#x327;a de Vendas.app"
+            BlueprintName = "For&#xe7;a de Vendas"
+            ReferencedContainer = "container:Forc&#x327;a de Vendas.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       shouldUseLaunchSchemeArgsEnv = "YES"
@@ -76,13 +77,14 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45E8DC3E4C08AF97C2692A15"
-            BuildableName = "Força de Vendas.app"
-            BlueprintName = "Força de Vendas"
-            ReferencedContainer = "container:Força de Vendas.xcodeproj">
+            BuildableName = "Forc&#x327;a de Vendas.app"
+            BlueprintName = "For&#xe7;a de Vendas"
+            ReferencedContainer = "container:Forc&#x327;a de Vendas.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

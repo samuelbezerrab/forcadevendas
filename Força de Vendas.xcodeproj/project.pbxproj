@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15E406B9B5EBACD94D7040C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C3DA0B5C57010A901630F0 /* libPods.a */; };
 		1F0BB63B3F41056E00C77B96 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = D3DAB86BB12B84C3B96430D8 /* Main.storyboard */; };
 		382D7AD4FF110D7093C1060F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6E2FD3B10543DFC19DBC3 /* AppDelegate.m */; };
+		495F98AD1B0FC0D900740CB7 /* ClienteListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */; };
+		49EB80971B0E2AAE004F067D /* DataModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB80961B0E2AAE004F067D /* DataModels.m */; };
+		49EB809A1B0E3406004F067D /* ClienteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB80991B0E3406004F067D /* ClienteDetailViewController.m */; };
+		49EB809E1B0E359E004F067D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB809D1B0E359E004F067D /* Utils.m */; };
 		A0AACDE602FFFB68A34F1619 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80B934A4B40B401A8C5B114 /* Foundation.framework */; };
 		B8DEE0D129F0D75EF60470E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA11E67ABEC6F058C32BC14 /* main.m */; };
 		E9A7BFD34F6958668424E863 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 27709AA4D86F742092C3FF53 /* LaunchScreen.xib */; };
@@ -28,13 +33,24 @@
 
 /* Begin PBXFileReference section */
 		0F931BD10F24309EEDDFB79E /* Força de Vendas-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Força de Vendas-Prefix.pch"; sourceTree = "<group>"; };
+		13C3DA0B5C57010A901630F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C867AEB63A1972D8979BF67 /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27709AA4D86F742092C3FF53 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		29085BB88188BD8298156927 /* Força de Vendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Força de Vendas.app"; path = "Força de Vendas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29085BB88188BD8298156927 /* Força de Vendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Força de Vendas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2B19CBFD591A38C911B73C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495F98AB1B0FC0D900740CB7 /* ClienteListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClienteListTableViewController.h; path = "Força de Vendas/Controllers/ClienteListTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClienteListTableViewController.m; path = "Força de Vendas/Controllers/ClienteListTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		49EB80951B0E2AAE004F067D /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModels.h; path = "Força de Vendas/Models/DataModels.h"; sourceTree = SOURCE_ROOT; };
+		49EB80961B0E2AAE004F067D /* DataModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModels.m; path = "Força de Vendas/Models/DataModels.m"; sourceTree = SOURCE_ROOT; };
+		49EB80981B0E3406004F067D /* ClienteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClienteDetailViewController.h; path = "Força de Vendas/Controllers/ClienteDetailViewController.h"; sourceTree = SOURCE_ROOT; };
+		49EB80991B0E3406004F067D /* ClienteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClienteDetailViewController.m; path = "Força de Vendas/Controllers/ClienteDetailViewController.m"; sourceTree = SOURCE_ROOT; };
+		49EB809C1B0E359E004F067D /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		49EB809D1B0E359E004F067D /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		5A564BB87856DA136DFB19DD /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		61177C38E66FDEFFEE2D02AF /* AppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D5C1FB81103B093F0E200E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		70B8F6DB635AAD98D0ECFBA3 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F0478226AF524BEF28A063 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7FA11E67ABEC6F058C32BC14 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8502E50C25191302529584D8 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		A80B934A4B40B401A8C5B114 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -51,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AACDE602FFFB68A34F1619 /* Foundation.framework in Frameworks */,
+				15E406B9B5EBACD94D7040C9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,8 @@
 		08474BE72D40895DD6778B01 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49EB80951B0E2AAE004F067D /* DataModels.h */,
+				49EB80961B0E2AAE004F067D /* DataModels.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,6 +124,16 @@
 			);
 			path = Tests;
 			sourceTree = "<group>";
+		};
+		49EB809B1B0E3589004F067D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				49EB809C1B0E359E004F067D /* Utils.h */,
+				49EB809D1B0E359E004F067D /* Utils.m */,
+			);
+			name = Utils;
+			path = "Força de Vendas/Utils";
+			sourceTree = SOURCE_ROOT;
 		};
 		4FB0B571FFF162AA1E646021 /* iOS */ = {
 			isa = PBXGroup;
@@ -133,6 +162,7 @@
 			children = (
 				4FB0B571FFF162AA1E646021 /* iOS */,
 				1C867AEB63A1972D8979BF67 /* libPods-unit_tests.a */,
+				13C3DA0B5C57010A901630F0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,6 +172,10 @@
 			children = (
 				61177C38E66FDEFFEE2D02AF /* AppDelegate.h */,
 				BFD6E2FD3B10543DFC19DBC3 /* AppDelegate.m */,
+				49EB80981B0E3406004F067D /* ClienteDetailViewController.h */,
+				49EB80991B0E3406004F067D /* ClienteDetailViewController.m */,
+				495F98AB1B0FC0D900740CB7 /* ClienteListTableViewController.h */,
+				495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +195,8 @@
 			children = (
 				EC384F33D6B97B8B7964C2CC /* Pods-unit_tests.release.xcconfig */,
 				E2AD295D89AE99E05E6B30DA /* Pods-unit_tests.debug.xcconfig */,
+				6D5C1FB81103B093F0E200E0 /* Pods.release.xcconfig */,
+				74F0478226AF524BEF28A063 /* Pods.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -182,6 +218,7 @@
 				BF1621D217CD1FB2962A8306 /* ViewModels */,
 				880296ED8BC09E37BA55DD41 /* Controllers */,
 				926D01DCA2850126AF996DBE /* Views */,
+				49EB809B1B0E3589004F067D /* Utils */,
 			);
 			path = "Força de Vendas";
 			sourceTree = "<group>";
@@ -277,10 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EBC9CE0594D301F9472C9F3 /* Build configuration list for PBXNativeTarget "Força de Vendas" */;
 			buildPhases = (
+				0B27242918B5332837BD78F0 /* Check Pods Manifest.lock */,
 				4E891AEDF7C7CF62C2827368 /* Sources */,
 				940C618C3EF621E2E148DB4D /* Frameworks */,
 				7625F9FBF00704770B46780F /* Resources */,
 				EA1961F886B95103B7F73877 /* Warn for TODO and FIXME comments */,
+				21E9E55810924F2EE148B88A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +377,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B27242918B5332837BD78F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		21E9E55810924F2EE148B88A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		793D30B4BC4F3A19BBA76D4C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,10 +458,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49EB809A1B0E3406004F067D /* ClienteDetailViewController.m in Sources */,
 				382D7AD4FF110D7093C1060F /* AppDelegate.m in Sources */,
 				1F0BB63B3F41056E00C77B96 /* Main.storyboard in Sources */,
 				E9A7BFD34F6958668424E863 /* LaunchScreen.xib in Sources */,
+				495F98AD1B0FC0D900740CB7 /* ClienteListTableViewController.m in Sources */,
 				B8DEE0D129F0D75EF60470E8 /* main.m in Sources */,
+				49EB809E1B0E359E004F067D /* Utils.m in Sources */,
+				49EB80971B0E2AAE004F067D /* DataModels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +611,7 @@
 		};
 		A1A98ED0A7C0A16EF516B11E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F0478226AF524BEF28A063 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
@@ -582,6 +656,7 @@
 		};
 		ED011BB731D668EB06801EF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5C1FB81103B093F0E200E0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;

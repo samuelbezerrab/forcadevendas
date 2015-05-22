@@ -7,7 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "ClienteListTableViewController.h"
 
 @implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIViewController *vc = [ClienteListTableViewController new];
+
+    UINavigationController *navControlelr = [UINavigationController new];
+    [navControlelr pushViewController:vc animated:NO];
+    
+    self.window.rootViewController = navControlelr;
+    
+
+    return YES;
+}
 
 @end

@@ -7,4 +7,6 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+    #import "Utils.h"
+    #import "UIAlertView+Blocks.h"
 #endif
