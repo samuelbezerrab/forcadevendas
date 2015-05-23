@@ -77,6 +77,7 @@ RLM_ARRAY_TYPE(Endereco)
 // Estagio de Processo de Venda Model
 @interface EstagioDeProcessoDeVenda : RLMObject
 
+@property int ordenacao;
 @property NSString *nome;
 
 @end

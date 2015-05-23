@@ -287,12 +287,14 @@ CGFloat tamanhoTelaComBordas = 288;
     self.dddField.frame = CGRectMake(posicaoX, telefoneLabel.frame.origin.y + telefoneLabel.frame.size.height, tamanhoTelaComBordas * 0.12, 30);
     self.dddField.font = [Utils defaultFont];
     self.dddField.placeholder = @"(00)";
+    self.dddField.keyboardType = UIKeyboardTypeNumberPad;
     [self.scrollView addSubview:self.dddField];
     
     
     self.numeroField.frame = CGRectMake(self.dddField.frame.origin.x + self.dddField.frame.size.width + 5, self.dddField.frame.origin.y, tamanhoTelaComBordas * 0.8 - 5, 30);
     self.numeroField.font = [Utils defaultFont];
     self.numeroField.placeholder = @"0000-0000";
+    self.numeroEnderecoField.keyboardType = UIKeyboardTypeNumberPad;
     [self.scrollView addSubview:self.numeroField];
     
     // Endereço
@@ -322,6 +324,7 @@ CGFloat tamanhoTelaComBordas = 288;
     self.numeroEnderecoField.frame = CGRectMake(virgulaLabel.frame.origin.x + virgulaLabel.frame.size.width + 5, self.ruaField.frame.origin.y , tamanhoTelaComBordas * 0.15 - 5, 30);
     self.numeroEnderecoField.font = [Utils defaultFont];
     self.numeroEnderecoField.placeholder = @"Nº";
+    self.numeroEnderecoField.keyboardType = UIKeyboardTypeNumberPad;
     [self.scrollView addSubview:self.numeroEnderecoField];
     
     UILabel *hifenLabel = [UILabel new];

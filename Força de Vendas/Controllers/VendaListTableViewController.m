@@ -66,9 +66,19 @@
     ProcessoDeVenda *pdv = [self.processosDeVenda objectAtIndex:(NSUInteger)indexPath.row];
     
     cell.textLabel.text = pdv.cliente.nome;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", pdv.estagio.nome];
+    
+    if (pdv.estagio.ordenacao >= 3) {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - R$ %.2f", [pdv.estagio.nome lowercaseString], pdv.valorProposta];
+    } else if (pdv.estagio.ordenacao == 5) {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - R$ %.2f", [pdv.estagio.nome lowercaseString], pdv.valorFechado];
+    } else {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [pdv.estagio.nome lowercaseString]];
+    }
+    
+    
     cell.dataVenda.text = [Utils formmatedStringForDate:pdv.dataInicio];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     
     return cell;
 }

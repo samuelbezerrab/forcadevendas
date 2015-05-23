@@ -46,21 +46,27 @@
 - (void)popuplarDB {
     
     EstagioDeProcessoDeVenda *prospecto = [EstagioDeProcessoDeVenda new];
+    prospecto.ordenacao = 1;
     prospecto.nome = @"Prospecto";
     
     EstagioDeProcessoDeVenda *qualificado = [EstagioDeProcessoDeVenda new];
+    qualificado.ordenacao = 2;
     qualificado.nome = @"Qualificado";
     
     EstagioDeProcessoDeVenda *propostaEnviada = [EstagioDeProcessoDeVenda new];
+    propostaEnviada.ordenacao = 3;
     propostaEnviada.nome = @"Proposta Enviada";
     
     EstagioDeProcessoDeVenda *negociacao = [EstagioDeProcessoDeVenda new];
+    negociacao.ordenacao = 4;
     negociacao.nome = @"Negociação";
     
     EstagioDeProcessoDeVenda *vendaRealizada = [EstagioDeProcessoDeVenda new];
+    vendaRealizada.ordenacao = 5;
     vendaRealizada.nome = @"Venda Realizada";
     
     EstagioDeProcessoDeVenda *vendaPerdida = [EstagioDeProcessoDeVenda new];
+    vendaRealizada.ordenacao = 5;
     vendaPerdida.nome = @"Venda Perdida";
     
     
