@@ -18,5 +18,6 @@
 + (NSString *)replaceDotWithCommaForString:(NSString *)string;
 + (NSString *)replaceCommaWithDotForString:(NSString *)string;
 + (NSString *)formmatedStringForDate:(NSDate *)date;
++ (NSString *)formmatedStringWithHourForDate:(NSDate *)date;
 
 @end

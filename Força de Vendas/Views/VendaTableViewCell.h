@@ -13,6 +13,5 @@
 @property (strong, nonatomic) UILabel *dataVenda;
 
 - (void)inicialiar;
-- (void)setData;
 
 @end

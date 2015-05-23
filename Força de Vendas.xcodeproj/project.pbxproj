@@ -14,6 +14,10 @@
 		495F98B21B0FD34A00740CB7 /* VendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98B11B0FD34A00740CB7 /* VendaDetailViewController.m */; };
 		495F98B51B1006A900740CB7 /* VendaListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98B41B1006A900740CB7 /* VendaListTableViewController.m */; };
 		495F98B81B101B5700740CB7 /* VendaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98B71B101B5700740CB7 /* VendaTableViewCell.m */; };
+		49BC11D41B107B4E00F68E2E /* LembreteListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11D31B107B4E00F68E2E /* LembreteListTableViewController.m */; };
+		49BC11D71B107B7000F68E2E /* LembreteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11D61B107B7000F68E2E /* LembreteDetailViewController.m */; };
+		49BC11DA1B107B9100F68E2E /* LembreteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11D91B107B9100F68E2E /* LembreteTableViewCell.m */; };
+		49BC11DD1B1089D100F68E2E /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49BC11DC1B1089D100F68E2E /* start.wav */; };
 		49EB80971B0E2AAE004F067D /* DataModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB80961B0E2AAE004F067D /* DataModels.m */; };
 		49EB809A1B0E3406004F067D /* ClienteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB80991B0E3406004F067D /* ClienteDetailViewController.m */; };
 		49EB809E1B0E359E004F067D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB809D1B0E359E004F067D /* Utils.m */; };
@@ -49,6 +53,13 @@
 		495F98B41B1006A900740CB7 /* VendaListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VendaListTableViewController.m; path = "Força de Vendas/Controllers/VendaListTableViewController.m"; sourceTree = SOURCE_ROOT; };
 		495F98B61B101B5700740CB7 /* VendaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VendaTableViewCell.h; path = "Força de Vendas/Views/VendaTableViewCell.h"; sourceTree = SOURCE_ROOT; };
 		495F98B71B101B5700740CB7 /* VendaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VendaTableViewCell.m; path = "Força de Vendas/Views/VendaTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		49BC11D21B107B4E00F68E2E /* LembreteListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LembreteListTableViewController.h; path = "Força de Vendas/Controllers/LembreteListTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		49BC11D31B107B4E00F68E2E /* LembreteListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LembreteListTableViewController.m; path = "Força de Vendas/Controllers/LembreteListTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		49BC11D51B107B7000F68E2E /* LembreteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LembreteDetailViewController.h; path = "Força de Vendas/Controllers/LembreteDetailViewController.h"; sourceTree = SOURCE_ROOT; };
+		49BC11D61B107B7000F68E2E /* LembreteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LembreteDetailViewController.m; path = "Força de Vendas/Controllers/LembreteDetailViewController.m"; sourceTree = SOURCE_ROOT; };
+		49BC11D81B107B9100F68E2E /* LembreteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LembreteTableViewCell.h; path = "Força de Vendas/Views/LembreteTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		49BC11D91B107B9100F68E2E /* LembreteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LembreteTableViewCell.m; path = "Força de Vendas/Views/LembreteTableViewCell.m"; sourceTree = SOURCE_ROOT; };
+		49BC11DC1B1089D100F68E2E /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = start.wav; sourceTree = "<group>"; };
 		49EB80951B0E2AAE004F067D /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModels.h; path = "Força de Vendas/Models/DataModels.h"; sourceTree = SOURCE_ROOT; };
 		49EB80961B0E2AAE004F067D /* DataModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModels.m; path = "Força de Vendas/Models/DataModels.m"; sourceTree = SOURCE_ROOT; };
 		49EB80981B0E3406004F067D /* ClienteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClienteDetailViewController.h; path = "Força de Vendas/Controllers/ClienteDetailViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -95,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				BF047E45639C906F0A7109E7 /* Images.xcassets */,
+				49BC11DB1B1089C400F68E2E /* Sounds */,
 				BE53BE137FB9A81CA5A1CD75 /* Storyboards */,
 				BD1ABCF3EFE6D8D48BD08E8E /* Nibs */,
 				DC85BCABAA625CBDFD6A0679 /* Other-Sources */,
@@ -156,6 +168,25 @@
 			name = Vendas;
 			sourceTree = "<group>";
 		};
+		49BC11D11B107AD900F68E2E /* Lembretes */ = {
+			isa = PBXGroup;
+			children = (
+				49BC11D21B107B4E00F68E2E /* LembreteListTableViewController.h */,
+				49BC11D31B107B4E00F68E2E /* LembreteListTableViewController.m */,
+				49BC11D51B107B7000F68E2E /* LembreteDetailViewController.h */,
+				49BC11D61B107B7000F68E2E /* LembreteDetailViewController.m */,
+			);
+			name = Lembretes;
+			sourceTree = "<group>";
+		};
+		49BC11DB1B1089C400F68E2E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				49BC11DC1B1089D100F68E2E /* start.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		49EB809B1B0E3589004F067D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +236,7 @@
 				BFD6E2FD3B10543DFC19DBC3 /* AppDelegate.m */,
 				495F98AE1B0FD32700740CB7 /* Clientes */,
 				495F98AF1B0FD32C00740CB7 /* Vendas */,
+				49BC11D11B107AD900F68E2E /* Lembretes */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -235,6 +267,8 @@
 			children = (
 				495F98B61B101B5700740CB7 /* VendaTableViewCell.h */,
 				495F98B71B101B5700740CB7 /* VendaTableViewCell.m */,
+				49BC11D81B107B9100F68E2E /* LembreteTableViewCell.h */,
+				49BC11D91B107B9100F68E2E /* LembreteTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -402,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB355AE786E3E74DCFD6B9CF /* Images.xcassets in Resources */,
+				49BC11DD1B1089D100F68E2E /* start.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,13 +526,16 @@
 			files = (
 				49EB809A1B0E3406004F067D /* ClienteDetailViewController.m in Sources */,
 				382D7AD4FF110D7093C1060F /* AppDelegate.m in Sources */,
+				49BC11D71B107B7000F68E2E /* LembreteDetailViewController.m in Sources */,
 				495F98B51B1006A900740CB7 /* VendaListTableViewController.m in Sources */,
 				1F0BB63B3F41056E00C77B96 /* Main.storyboard in Sources */,
 				E9A7BFD34F6958668424E863 /* LaunchScreen.xib in Sources */,
 				495F98AD1B0FC0D900740CB7 /* ClienteListTableViewController.m in Sources */,
+				49BC11DA1B107B9100F68E2E /* LembreteTableViewCell.m in Sources */,
 				495F98B21B0FD34A00740CB7 /* VendaDetailViewController.m in Sources */,
 				495F98B81B101B5700740CB7 /* VendaTableViewCell.m in Sources */,
 				B8DEE0D129F0D75EF60470E8 /* main.m in Sources */,
+				49BC11D41B107B4E00F68E2E /* LembreteListTableViewController.m in Sources */,
 				49EB809E1B0E359E004F067D /* Utils.m in Sources */,
 				49EB80971B0E2AAE004F067D /* DataModels.m in Sources */,
 			);

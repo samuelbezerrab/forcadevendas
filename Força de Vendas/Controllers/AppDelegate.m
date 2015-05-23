@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ClienteListTableViewController.h"
 #import "VendaListTableViewController.h"
+#import "LembreteListTableViewController.h"
 
 #import <Realm/Realm.h>
 #import "DataModels.h"
@@ -25,10 +26,15 @@
     UIViewController *vendasVC = [VendaListTableViewController new];
     UINavigationController *vendaNav = [UINavigationController new];
     [vendaNav pushViewController:vendasVC animated:NO];
+    
+    LembreteListTableViewController *ltVC = [LembreteListTableViewController new];
+    UINavigationController *lembretesNav = [UINavigationController new];
+    [lembretesNav pushViewController:ltVC animated:NO];
 
     UITabBarController *tabBarController = [UITabBarController new];
     [tabBarController addChildViewController:clientesNav];
     [tabBarController addChildViewController:vendaNav];
+    [tabBarController addChildViewController:lembretesNav];
         
     
     self.window.rootViewController = tabBarController;
@@ -42,7 +48,12 @@
     return YES;
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    
+    [UIAlertView showWithTitle:@"Está na hora de:" message:notification.alertBody cancelButtonTitle:@"Ok" otherButtonTitles:nil tapBlock:nil];
+}
 
+#pragma mark - Private methods
 - (void)popuplarDB {
     
     EstagioDeProcessoDeVenda *prospecto = [EstagioDeProcessoDeVenda new];

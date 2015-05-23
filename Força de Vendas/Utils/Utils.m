@@ -66,5 +66,12 @@
     return [dateFormmatter stringFromDate:date];
 }
 
++ (NSString *)formmatedStringWithHourForDate:(NSDate *)date {
+    
+    NSDateFormatter *dateFormmatter = [[NSDateFormatter alloc] init];
+    [dateFormmatter setDateFormat:@"hh:mm'h -' dd' de 'MMM"];
+    return [dateFormmatter stringFromDate:date];
+}
+
 
 @end

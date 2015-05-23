@@ -24,7 +24,4 @@
 }
 
 
-- (void)setData {
-    
-}
 @end
