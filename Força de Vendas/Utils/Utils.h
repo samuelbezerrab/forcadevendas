@@ -14,4 +14,9 @@
 + (UIFont *)defaultFont;
 + (UIFont *)defaultFontWithSize:(CGFloat)size;
 
++ (NSUserDefaults *)getDefaults;
++ (NSString *)replaceDotWithCommaForString:(NSString *)string;
++ (NSString *)replaceCommaWithDotForString:(NSString *)string;
++ (NSString *)formmatedStringForDate:(NSDate *)date;
+
 @end

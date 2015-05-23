@@ -11,6 +11,9 @@
 		1F0BB63B3F41056E00C77B96 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = D3DAB86BB12B84C3B96430D8 /* Main.storyboard */; };
 		382D7AD4FF110D7093C1060F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6E2FD3B10543DFC19DBC3 /* AppDelegate.m */; };
 		495F98AD1B0FC0D900740CB7 /* ClienteListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */; };
+		495F98B21B0FD34A00740CB7 /* VendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98B11B0FD34A00740CB7 /* VendaDetailViewController.m */; };
+		495F98B51B1006A900740CB7 /* VendaListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98B41B1006A900740CB7 /* VendaListTableViewController.m */; };
+		495F98B81B101B5700740CB7 /* VendaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98B71B101B5700740CB7 /* VendaTableViewCell.m */; };
 		49EB80971B0E2AAE004F067D /* DataModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB80961B0E2AAE004F067D /* DataModels.m */; };
 		49EB809A1B0E3406004F067D /* ClienteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB80991B0E3406004F067D /* ClienteDetailViewController.m */; };
 		49EB809E1B0E359E004F067D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB809D1B0E359E004F067D /* Utils.m */; };
@@ -40,6 +43,12 @@
 		3D2B19CBFD591A38C911B73C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495F98AB1B0FC0D900740CB7 /* ClienteListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClienteListTableViewController.h; path = "Força de Vendas/Controllers/ClienteListTableViewController.h"; sourceTree = SOURCE_ROOT; };
 		495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClienteListTableViewController.m; path = "Força de Vendas/Controllers/ClienteListTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		495F98B01B0FD34A00740CB7 /* VendaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VendaDetailViewController.h; path = "Força de Vendas/Controllers/VendaDetailViewController.h"; sourceTree = SOURCE_ROOT; };
+		495F98B11B0FD34A00740CB7 /* VendaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VendaDetailViewController.m; path = "Força de Vendas/Controllers/VendaDetailViewController.m"; sourceTree = SOURCE_ROOT; };
+		495F98B31B1006A900740CB7 /* VendaListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VendaListTableViewController.h; path = "Força de Vendas/Controllers/VendaListTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		495F98B41B1006A900740CB7 /* VendaListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VendaListTableViewController.m; path = "Força de Vendas/Controllers/VendaListTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		495F98B61B101B5700740CB7 /* VendaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VendaTableViewCell.h; path = "Força de Vendas/Views/VendaTableViewCell.h"; sourceTree = SOURCE_ROOT; };
+		495F98B71B101B5700740CB7 /* VendaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VendaTableViewCell.m; path = "Força de Vendas/Views/VendaTableViewCell.m"; sourceTree = SOURCE_ROOT; };
 		49EB80951B0E2AAE004F067D /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModels.h; path = "Força de Vendas/Models/DataModels.h"; sourceTree = SOURCE_ROOT; };
 		49EB80961B0E2AAE004F067D /* DataModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModels.m; path = "Força de Vendas/Models/DataModels.m"; sourceTree = SOURCE_ROOT; };
 		49EB80981B0E3406004F067D /* ClienteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClienteDetailViewController.h; path = "Força de Vendas/Controllers/ClienteDetailViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -125,6 +134,28 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		495F98AE1B0FD32700740CB7 /* Clientes */ = {
+			isa = PBXGroup;
+			children = (
+				49EB80981B0E3406004F067D /* ClienteDetailViewController.h */,
+				49EB80991B0E3406004F067D /* ClienteDetailViewController.m */,
+				495F98AB1B0FC0D900740CB7 /* ClienteListTableViewController.h */,
+				495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */,
+			);
+			name = Clientes;
+			sourceTree = "<group>";
+		};
+		495F98AF1B0FD32C00740CB7 /* Vendas */ = {
+			isa = PBXGroup;
+			children = (
+				495F98B01B0FD34A00740CB7 /* VendaDetailViewController.h */,
+				495F98B11B0FD34A00740CB7 /* VendaDetailViewController.m */,
+				495F98B31B1006A900740CB7 /* VendaListTableViewController.h */,
+				495F98B41B1006A900740CB7 /* VendaListTableViewController.m */,
+			);
+			name = Vendas;
+			sourceTree = "<group>";
+		};
 		49EB809B1B0E3589004F067D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,10 +203,8 @@
 			children = (
 				61177C38E66FDEFFEE2D02AF /* AppDelegate.h */,
 				BFD6E2FD3B10543DFC19DBC3 /* AppDelegate.m */,
-				49EB80981B0E3406004F067D /* ClienteDetailViewController.h */,
-				49EB80991B0E3406004F067D /* ClienteDetailViewController.m */,
-				495F98AB1B0FC0D900740CB7 /* ClienteListTableViewController.h */,
-				495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */,
+				495F98AE1B0FD32700740CB7 /* Clientes */,
+				495F98AF1B0FD32C00740CB7 /* Vendas */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +233,8 @@
 		926D01DCA2850126AF996DBE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				495F98B61B101B5700740CB7 /* VendaTableViewCell.h */,
+				495F98B71B101B5700740CB7 /* VendaTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -460,9 +491,12 @@
 			files = (
 				49EB809A1B0E3406004F067D /* ClienteDetailViewController.m in Sources */,
 				382D7AD4FF110D7093C1060F /* AppDelegate.m in Sources */,
+				495F98B51B1006A900740CB7 /* VendaListTableViewController.m in Sources */,
 				1F0BB63B3F41056E00C77B96 /* Main.storyboard in Sources */,
 				E9A7BFD34F6958668424E863 /* LaunchScreen.xib in Sources */,
 				495F98AD1B0FC0D900740CB7 /* ClienteListTableViewController.m in Sources */,
+				495F98B21B0FD34A00740CB7 /* VendaDetailViewController.m in Sources */,
+				495F98B81B101B5700740CB7 /* VendaTableViewCell.m in Sources */,
 				B8DEE0D129F0D75EF60470E8 /* main.m in Sources */,
 				49EB809E1B0E359E004F067D /* Utils.m in Sources */,
 				49EB80971B0E2AAE004F067D /* DataModels.m in Sources */,

@@ -66,8 +66,11 @@ RLM_ARRAY_TYPE(Endereco)
 @property Cliente *cliente;
 @property EstagioDeProcessoDeVenda *estagio;
 
+@property NSDate *dataInicio;
+
 @property float valorProposta;
 @property float valorFechado;
+
 
 @end
 

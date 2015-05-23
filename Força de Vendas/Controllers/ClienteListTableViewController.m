@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.title = @"Clientes";
     self.clientes = [Cliente allObjects];
     
     UIBarButtonItem *novoButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(novoCliente)];
@@ -65,7 +65,10 @@
     
     cell.textLabel.text = c.nome;
     cell.detailTextLabel.text = c.nomePessoaDeContato;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    if (!self.vendaVC) {
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
     
     return cell;
 }
@@ -74,11 +77,19 @@
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
-    ClienteDetailViewController *cVC = [ClienteDetailViewController new];
-    cVC.cliente = [self.clientes objectAtIndex:(NSUInteger)indexPath.row];
-    
-    [self.navigationController pushViewController:cVC animated:YES];
+    Cliente *cliente = [self.clientes objectAtIndex:(NSUInteger)indexPath.row];
+    if (!self.vendaVC) {
+        ClienteDetailViewController *cVC = [ClienteDetailViewController new];
+        cVC.cliente = cliente;
+        
+        [self.navigationController pushViewController:cVC animated:YES];
+
+    } else {
+        
+        self.vendaVC.cliente = cliente;
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    }
 }
 
 @end

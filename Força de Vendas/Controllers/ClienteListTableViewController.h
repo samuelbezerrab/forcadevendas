@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VendaDetailViewController.h"
 
 @interface ClienteListTableViewController : UITableViewController
+
+@property (strong, nonatomic) VendaDetailViewController *vendaVC;
 
 @end
