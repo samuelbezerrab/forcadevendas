@@ -1,18 +1,24 @@
 PODS:
+  - PNChart (0.8.3):
+    - UICountingLabel (~> 1.2.0)
   - Realm (0.92.3):
     - Realm/Headers (= 0.92.3)
   - Realm/Headers (0.92.3)
   - TPKeyboardAvoiding (1.2.6)
   - UIAlertView+Blocks (0.9)
+  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
+  - PNChart
   - Realm
   - TPKeyboardAvoiding
   - UIAlertView+Blocks
 
 SPEC CHECKSUMS:
+  PNChart: 8d81e061ec4845915184755d8da84f385ca1cb28
   Realm: bf604805d5e897850da488260f93889f510924b3
   TPKeyboardAvoiding: ee4dd35e3bb7bb64bfbda47e7cc9ba872ff10f77
   UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
 COCOAPODS: 0.37.1

@@ -10,6 +10,7 @@
 #import "ClienteListTableViewController.h"
 #import "VendaListTableViewController.h"
 #import "LembreteListTableViewController.h"
+#import "RealtorioTableViewController.h"
 
 #import <Realm/Realm.h>
 #import "DataModels.h"
@@ -18,23 +19,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIViewController *clientesVC = [ClienteListTableViewController new];
-    UINavigationController *clientesNav = [UINavigationController new];
-    [clientesNav pushViewController:clientesVC animated:NO];
     
-    
-    UIViewController *vendasVC = [VendaListTableViewController new];
-    UINavigationController *vendaNav = [UINavigationController new];
-    [vendaNav pushViewController:vendasVC animated:NO];
+    UIViewController *relatoriosVC = [RealtorioTableViewController new];
+    UINavigationController *relatoriosNav = [UINavigationController new];
+    [relatoriosNav pushViewController:relatoriosVC animated:YES];
     
     LembreteListTableViewController *ltVC = [LembreteListTableViewController new];
     UINavigationController *lembretesNav = [UINavigationController new];
     [lembretesNav pushViewController:ltVC animated:NO];
 
+    UIViewController *vendasVC = [VendaListTableViewController new];
+    UINavigationController *vendaNav = [UINavigationController new];
+    [vendaNav pushViewController:vendasVC animated:NO];
+
+    UIViewController *clientesVC = [ClienteListTableViewController new];
+    UINavigationController *clientesNav = [UINavigationController new];
+    [clientesNav pushViewController:clientesVC animated:NO];
+    
+    
     UITabBarController *tabBarController = [UITabBarController new];
-    [tabBarController addChildViewController:clientesNav];
-    [tabBarController addChildViewController:vendaNav];
+    [tabBarController addChildViewController:relatoriosNav];
     [tabBarController addChildViewController:lembretesNav];
+    [tabBarController addChildViewController:vendaNav];
+    [tabBarController addChildViewController:clientesNav];
+    
         
     
     self.window.rootViewController = tabBarController;
@@ -91,5 +99,16 @@
     [realm addObject:vendaPerdida];
     [realm commitWriteTransaction];
 }
+
+/*
+ 
+ Fix para o grafico:
+ Classe: PNBarChart.h
+ Linha 94:
+ 
+ CGFloat result =  _yValueMax  - (_yValueMax / [_yValues count] * (index));
+ NSString *labelText = [NSString stringWithFormat:@"%.f", result];
+
+*/
 
 @end

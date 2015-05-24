@@ -18,6 +18,10 @@
 		49BC11D71B107B7000F68E2E /* LembreteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11D61B107B7000F68E2E /* LembreteDetailViewController.m */; };
 		49BC11DA1B107B9100F68E2E /* LembreteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11D91B107B9100F68E2E /* LembreteTableViewCell.m */; };
 		49BC11DD1B1089D100F68E2E /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = 49BC11DC1B1089D100F68E2E /* start.wav */; };
+		49BC11E11B10B6B500F68E2E /* RealtorioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11E01B10B6B500F68E2E /* RealtorioTableViewController.m */; };
+		49BC11E41B10B78000F68E2E /* RelatorioNovosClientePorTempoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11E31B10B78000F68E2E /* RelatorioNovosClientePorTempoViewController.m */; };
+		49BC11E71B10B79400F68E2E /* RelatorioVendasPorTempoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11E61B10B79400F68E2E /* RelatorioVendasPorTempoViewController.m */; };
+		49BC11EA1B10B7D600F68E2E /* RelatorioVendasVersusPerdasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC11E91B10B7D600F68E2E /* RelatorioVendasVersusPerdasViewController.m */; };
 		49EB80971B0E2AAE004F067D /* DataModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB80961B0E2AAE004F067D /* DataModels.m */; };
 		49EB809A1B0E3406004F067D /* ClienteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB80991B0E3406004F067D /* ClienteDetailViewController.m */; };
 		49EB809E1B0E359E004F067D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB809D1B0E359E004F067D /* Utils.m */; };
@@ -60,6 +64,14 @@
 		49BC11D81B107B9100F68E2E /* LembreteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LembreteTableViewCell.h; path = "Força de Vendas/Views/LembreteTableViewCell.h"; sourceTree = SOURCE_ROOT; };
 		49BC11D91B107B9100F68E2E /* LembreteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LembreteTableViewCell.m; path = "Força de Vendas/Views/LembreteTableViewCell.m"; sourceTree = SOURCE_ROOT; };
 		49BC11DC1B1089D100F68E2E /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = start.wav; sourceTree = "<group>"; };
+		49BC11DF1B10B6B500F68E2E /* RealtorioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealtorioTableViewController.h; path = "Força de Vendas/Controllers/RealtorioTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		49BC11E01B10B6B500F68E2E /* RealtorioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealtorioTableViewController.m; path = "Força de Vendas/Controllers/RealtorioTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		49BC11E21B10B78000F68E2E /* RelatorioNovosClientePorTempoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RelatorioNovosClientePorTempoViewController.h; path = "Força de Vendas/Controllers/RelatorioNovosClientePorTempoViewController.h"; sourceTree = SOURCE_ROOT; };
+		49BC11E31B10B78000F68E2E /* RelatorioNovosClientePorTempoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RelatorioNovosClientePorTempoViewController.m; path = "Força de Vendas/Controllers/RelatorioNovosClientePorTempoViewController.m"; sourceTree = SOURCE_ROOT; };
+		49BC11E51B10B79400F68E2E /* RelatorioVendasPorTempoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RelatorioVendasPorTempoViewController.h; path = "Força de Vendas/Controllers/RelatorioVendasPorTempoViewController.h"; sourceTree = SOURCE_ROOT; };
+		49BC11E61B10B79400F68E2E /* RelatorioVendasPorTempoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RelatorioVendasPorTempoViewController.m; path = "Força de Vendas/Controllers/RelatorioVendasPorTempoViewController.m"; sourceTree = SOURCE_ROOT; };
+		49BC11E81B10B7D600F68E2E /* RelatorioVendasVersusPerdasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RelatorioVendasVersusPerdasViewController.h; path = "Força de Vendas/Controllers/RelatorioVendasVersusPerdasViewController.h"; sourceTree = SOURCE_ROOT; };
+		49BC11E91B10B7D600F68E2E /* RelatorioVendasVersusPerdasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RelatorioVendasVersusPerdasViewController.m; path = "Força de Vendas/Controllers/RelatorioVendasVersusPerdasViewController.m"; sourceTree = SOURCE_ROOT; };
 		49EB80951B0E2AAE004F067D /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModels.h; path = "Força de Vendas/Models/DataModels.h"; sourceTree = SOURCE_ROOT; };
 		49EB80961B0E2AAE004F067D /* DataModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataModels.m; path = "Força de Vendas/Models/DataModels.m"; sourceTree = SOURCE_ROOT; };
 		49EB80981B0E3406004F067D /* ClienteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClienteDetailViewController.h; path = "Força de Vendas/Controllers/ClienteDetailViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -187,6 +199,21 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		49BC11DE1B10B69600F68E2E /* Relatorio */ = {
+			isa = PBXGroup;
+			children = (
+				49BC11DF1B10B6B500F68E2E /* RealtorioTableViewController.h */,
+				49BC11E01B10B6B500F68E2E /* RealtorioTableViewController.m */,
+				49BC11E21B10B78000F68E2E /* RelatorioNovosClientePorTempoViewController.h */,
+				49BC11E31B10B78000F68E2E /* RelatorioNovosClientePorTempoViewController.m */,
+				49BC11E51B10B79400F68E2E /* RelatorioVendasPorTempoViewController.h */,
+				49BC11E61B10B79400F68E2E /* RelatorioVendasPorTempoViewController.m */,
+				49BC11E81B10B7D600F68E2E /* RelatorioVendasVersusPerdasViewController.h */,
+				49BC11E91B10B7D600F68E2E /* RelatorioVendasVersusPerdasViewController.m */,
+			);
+			name = Relatorio;
+			sourceTree = "<group>";
+		};
 		49EB809B1B0E3589004F067D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +264,7 @@
 				495F98AE1B0FD32700740CB7 /* Clientes */,
 				495F98AF1B0FD32C00740CB7 /* Vendas */,
 				49BC11D11B107AD900F68E2E /* Lembretes */,
+				49BC11DE1B10B69600F68E2E /* Relatorio */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -524,12 +552,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BC11E11B10B6B500F68E2E /* RealtorioTableViewController.m in Sources */,
 				49EB809A1B0E3406004F067D /* ClienteDetailViewController.m in Sources */,
 				382D7AD4FF110D7093C1060F /* AppDelegate.m in Sources */,
 				49BC11D71B107B7000F68E2E /* LembreteDetailViewController.m in Sources */,
+				49BC11E71B10B79400F68E2E /* RelatorioVendasPorTempoViewController.m in Sources */,
 				495F98B51B1006A900740CB7 /* VendaListTableViewController.m in Sources */,
+				49BC11EA1B10B7D600F68E2E /* RelatorioVendasVersusPerdasViewController.m in Sources */,
 				1F0BB63B3F41056E00C77B96 /* Main.storyboard in Sources */,
 				E9A7BFD34F6958668424E863 /* LaunchScreen.xib in Sources */,
+				49BC11E41B10B78000F68E2E /* RelatorioNovosClientePorTempoViewController.m in Sources */,
 				495F98AD1B0FC0D900740CB7 /* ClienteListTableViewController.m in Sources */,
 				49BC11DA1B107B9100F68E2E /* LembreteTableViewCell.m in Sources */,
 				495F98B21B0FD34A00740CB7 /* VendaDetailViewController.m in Sources */,

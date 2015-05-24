@@ -73,5 +73,33 @@
     return [dateFormmatter stringFromDate:date];
 }
 
++ (NSString *)formmatedDayFromDate:(NSDate *)date {
+    
+    NSDateFormatter *dateFormmatter = [[NSDateFormatter alloc] init];
+    [dateFormmatter setDateFormat:@"dd"];
+    return [dateFormmatter stringFromDate:date];
+}
+
++ (NSDate *)beginningOfDay{
+    NSCalendar* gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents* dateComponents = [gregorian components:(NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond) fromDate:[NSDate date]];
+    
+    [dateComponents setHour:00];
+    [dateComponents setMinute:00];
+    [dateComponents setSecond:00];
+    
+    return [gregorian dateFromComponents:dateComponents];
+}
+
++ (NSDate *)endOfDay{
+    NSCalendar* gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents* dateComponents = [gregorian components:(NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond) fromDate:[NSDate date]];
+    
+    [dateComponents setHour:23];
+    [dateComponents setMinute:59];
+    [dateComponents setSecond:59];
+    
+    return [gregorian dateFromComponents:dateComponents];
+}
 
 @end

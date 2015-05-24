@@ -29,6 +29,8 @@
 @property Telefone *telefone;
 @property Endereco *endereco;
 
+@property NSDate *dataCadastro;
+
 @end
 RLM_ARRAY_TYPE(Cliente)
 

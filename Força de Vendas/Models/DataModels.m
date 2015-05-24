@@ -9,6 +9,9 @@
 #import "DataModels.h"
 
 @implementation Cliente
++ (NSDictionary *)defaultPropertyValues {
+    return @{@"dataCadastro" : [NSDate date]};
+}
 @end
 
 @implementation Telefone
