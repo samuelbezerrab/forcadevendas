@@ -38,6 +38,7 @@
     
     
     UITabBarController *tabBarController = [UITabBarController new];
+    [tabBarController setViewControllers:@[relatoriosNav, lembretesNav, vendaNav, clientesNav] animated:NO];
     [tabBarController addChildViewController:relatoriosNav];
     [tabBarController addChildViewController:lembretesNav];
     [tabBarController addChildViewController:vendaNav];

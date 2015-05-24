@@ -10,6 +10,7 @@
 		15E406B9B5EBACD94D7040C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C3DA0B5C57010A901630F0 /* libPods.a */; };
 		1F0BB63B3F41056E00C77B96 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = D3DAB86BB12B84C3B96430D8 /* Main.storyboard */; };
 		382D7AD4FF110D7093C1060F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6E2FD3B10543DFC19DBC3 /* AppDelegate.m */; };
+		493184581B115D0A00D2EE46 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493184571B115D0A00D2EE46 /* Media.xcassets */; };
 		495F98AD1B0FC0D900740CB7 /* ClienteListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */; };
 		495F98B21B0FD34A00740CB7 /* VendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98B11B0FD34A00740CB7 /* VendaDetailViewController.m */; };
 		495F98B51B1006A900740CB7 /* VendaListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F98B41B1006A900740CB7 /* VendaListTableViewController.m */; };
@@ -49,6 +50,7 @@
 		27709AA4D86F742092C3FF53 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		29085BB88188BD8298156927 /* Força de Vendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Força de Vendas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2B19CBFD591A38C911B73C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493184571B115D0A00D2EE46 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		495F98AB1B0FC0D900740CB7 /* ClienteListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClienteListTableViewController.h; path = "Força de Vendas/Controllers/ClienteListTableViewController.h"; sourceTree = SOURCE_ROOT; };
 		495F98AC1B0FC0D900740CB7 /* ClienteListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClienteListTableViewController.m; path = "Força de Vendas/Controllers/ClienteListTableViewController.m"; sourceTree = SOURCE_ROOT; };
 		495F98B01B0FD34A00740CB7 /* VendaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VendaDetailViewController.h; path = "Força de Vendas/Controllers/VendaDetailViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -117,6 +119,7 @@
 		031958BFBEDE8E6BC2E47D4F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				493184571B115D0A00D2EE46 /* Media.xcassets */,
 				BF047E45639C906F0A7109E7 /* Images.xcassets */,
 				49BC11DB1B1089C400F68E2E /* Sounds */,
 				BE53BE137FB9A81CA5A1CD75 /* Storyboards */,
@@ -464,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB355AE786E3E74DCFD6B9CF /* Images.xcassets in Resources */,
+				493184581B115D0A00D2EE46 /* Media.xcassets in Resources */,
 				49BC11DD1B1089D100F68E2E /* start.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,6 +722,7 @@
 			baseConfigurationReference = 74F0478226AF524BEF28A063 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -763,6 +768,7 @@
 			baseConfigurationReference = 6D5C1FB81103B093F0E200E0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
