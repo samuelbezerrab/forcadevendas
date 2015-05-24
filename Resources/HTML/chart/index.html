@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grafico</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		body {
+		   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		   font-weight: 300;
+		}
+
+		#funnel {
+			width: 300px;
+			height: 400px;
+			margin: 0 auto;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<div id="funnel"></div>
+
+
+
+<script src="d3.min.js"></script>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="d3-funnel.js?1"></script>
+
+<!-- Funcoes -->
+<script type="text/javascript">
+	(function($) {
+	    $.QueryString = (function(a) {
+	        if (a == "") return {};
+	        var b = {};
+	        for (var i = 0; i < a.length; ++i)
+	        {
+	            var p=a[i].split('=');
+	            if (p.length != 2) continue;
+	            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+	        }
+	        return b;
+	    })(window.location.search.substr(1).split('&'))
+	})(jQuery);
+</script>
+
+<!-- Pegar dados -->
+<script type="text/javascript">
+
+	var qtdProspecto = parseInt($.QueryString["1"]);
+	var qtdQualificado = parseInt($.QueryString["2"]);
+	var qtdPropostaEnviada = parseInt($.QueryString["3"]);
+	var qtdNegociacao = parseInt($.QueryString["4"]);
+	var qtdVendaRealizada = parseInt($.QueryString["5"]);
+
+    var data = [
+        ["prospectos", qtdProspecto],
+        ["qualificados",    qtdQualificado],
+        ["propostas enviadas", qtdPropostaEnviada],
+        ["em negociação",      qtdNegociacao],
+        ["vendas realizadas", qtdVendaRealizada]
+    ];
+    var options = {
+    	isCurved: true,
+    	bottomPinch: 2,
+		hoverEffects: true,
+		dynamicArea: true,
+        animation: 200
+	};
+
+    var chart = new D3Funnel("#funnel");
+    chart.draw(data, options);
+</script>
+<!-- 
+file:///Users/samuelbezerrab/Downloads/jakezatecky-d3-funnel-f953d18/examples/index2.html?1=5&2=4&3=3&4=2&5=1
+-->
+
+</body>
+</html>

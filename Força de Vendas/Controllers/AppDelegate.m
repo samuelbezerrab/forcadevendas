@@ -11,6 +11,7 @@
 #import "VendaListTableViewController.h"
 #import "LembreteListTableViewController.h"
 #import "RealtorioTableViewController.h"
+#import "HomeViewController.h"
 
 #import <Realm/Realm.h>
 #import "DataModels.h"
@@ -28,6 +29,10 @@
     UINavigationController *lembretesNav = [UINavigationController new];
     [lembretesNav pushViewController:ltVC animated:NO];
 
+    HomeViewController *hVC = [HomeViewController new];
+    UINavigationController *homveNav = [UINavigationController new];
+    [homveNav pushViewController:hVC animated:NO];
+    
     UIViewController *vendasVC = [VendaListTableViewController new];
     UINavigationController *vendaNav = [UINavigationController new];
     [vendaNav pushViewController:vendasVC animated:NO];
@@ -38,13 +43,13 @@
     
     
     UITabBarController *tabBarController = [UITabBarController new];
-    [tabBarController setViewControllers:@[relatoriosNav, lembretesNav, vendaNav, clientesNav] animated:NO];
     [tabBarController addChildViewController:relatoriosNav];
     [tabBarController addChildViewController:lembretesNav];
+    [tabBarController addChildViewController:homveNav];
     [tabBarController addChildViewController:vendaNav];
     [tabBarController addChildViewController:clientesNav];
     
-        
+    [tabBarController setSelectedIndex:2];
     
     self.window.rootViewController = tabBarController;
     

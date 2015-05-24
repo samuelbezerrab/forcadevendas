@@ -71,6 +71,10 @@
     
     UIBarButtonItem *salvarButton = [[UIBarButtonItem alloc] initWithTitle:@"Salvar" style:UIBarButtonItemStylePlain target:self action:@selector(salvarVenda)];
     self.navigationItem.rightBarButtonItem = salvarButton;
+    
+    if ([self.navigationController.viewControllers count] == 1) {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Fechar" style:UIBarButtonItemStylePlain target:self action:@selector(fecharTela)];
+    }
 }
 
 #pragma mark - Geters & Seters
@@ -105,7 +109,18 @@
         [self salvarNovaVenda];
     }
     
-    [self.navigationController popViewControllerAnimated:YES];
+    
+    if ([self.navigationController.viewControllers count] > 1) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+- (void)fecharTela {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 - (void)salvarNovaVenda {
