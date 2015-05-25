@@ -23,22 +23,32 @@
     
     UIViewController *relatoriosVC = [RealtorioTableViewController new];
     UINavigationController *relatoriosNav = [UINavigationController new];
+    relatoriosNav.tabBarItem.title = @"Relatórios";
+    relatoriosNav.tabBarItem.image = [UIImage imageNamed:@"chart.png"];
     [relatoriosNav pushViewController:relatoriosVC animated:YES];
     
     LembreteListTableViewController *ltVC = [LembreteListTableViewController new];
     UINavigationController *lembretesNav = [UINavigationController new];
+    lembretesNav.tabBarItem.title = @"Lembretes";
+    lembretesNav.tabBarItem.image = [UIImage imageNamed:@"clock.png"];
     [lembretesNav pushViewController:ltVC animated:NO];
 
     HomeViewController *hVC = [HomeViewController new];
     UINavigationController *homveNav = [UINavigationController new];
+    homveNav.tabBarItem.title = @"Home";
+    homveNav.tabBarItem.image = [UIImage imageNamed:@"home"];
     [homveNav pushViewController:hVC animated:NO];
     
     UIViewController *vendasVC = [VendaListTableViewController new];
     UINavigationController *vendaNav = [UINavigationController new];
+    vendaNav.tabBarItem.title = @"Vendas";
+    vendaNav.tabBarItem.image = [UIImage imageNamed:@"money.png"];
     [vendaNav pushViewController:vendasVC animated:NO];
 
     UIViewController *clientesVC = [ClienteListTableViewController new];
     UINavigationController *clientesNav = [UINavigationController new];
+    clientesNav.tabBarItem.title = @"Clientes";
+    clientesNav.tabBarItem.image = [UIImage imageNamed:@"person.png"];
     [clientesNav pushViewController:clientesVC animated:NO];
     
     
