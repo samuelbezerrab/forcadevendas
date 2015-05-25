@@ -80,7 +80,7 @@
 - (void)layoutUI {
     
     self.graficoWebView.frame = self.view.frame;
-    self.graficoWebView.backgroundColor = [UIColor grayColor];
+    self.graficoWebView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.graficoWebView];
     
 }
