@@ -58,12 +58,13 @@
     RLMResults *qualificados = [ProcessoDeVenda objectsWhere:@"estagio.nome == 'Qualificado'"];
     RLMResults *propEnviada = [ProcessoDeVenda objectsWhere:@"estagio.nome == 'Proposta Enviada'"];
     RLMResults *negociacao = [ProcessoDeVenda objectsWhere:@"estagio.nome == 'Negociação'"];
+    RLMResults *perdidas = [ProcessoDeVenda objectsWhere:@"estagio.nome == 'Venda Perdida'"];
     
     NSUInteger prospectosValue = [todosProcessos count];
     NSUInteger qualificadosValue = prospectosValue - [prospectos count];
     NSUInteger propEnviadaValue = qualificadosValue - [qualificados count];
     NSUInteger negociacaoValue = propEnviadaValue - [propEnviada count];
-    NSUInteger vendaRealizadaValue = negociacaoValue - [negociacao count];
+    NSUInteger vendaRealizadaValue = negociacaoValue - [negociacao count] - [perdidas count];
     
     NSString *values = [NSString stringWithFormat:@"1=%lu&2=%lu&3=%lu&4=%lu&5=%lu", (unsigned long)prospectosValue, (unsigned long)qualificadosValue, (unsigned long)propEnviadaValue, (unsigned long)negociacaoValue, (unsigned long)vendaRealizadaValue];
     
